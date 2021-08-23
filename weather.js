@@ -15,7 +15,7 @@ async function getCountryApi() {
   select.innerHTML = html;
 }
 getCountryApi();
-select.onclick = function (e) {
+select.onchange = function (e) {
   let country = e.target.value;
   weather(country);
 };
