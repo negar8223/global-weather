@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="weather.css" />
+    <script src="weather.js" defer></script>
+    <link rel="icon" href="img/icon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Weather</title>
+  </head>
+  <body id="background" class="scroll">
+    <div class="row">
+      <div class="col-md-4 col-sm-4 col-xs-1"></div>
+      <div class="col-md-4 col-sm-6 col-xs-12 selectbox-style">
+        Select Country
+      </div>
+    </div>
+    <div class="row selectbox-margin">
+      <div class="col-md-4 col-sm-4 col-xs-1"></div>
+      <div class="col-md-4 col-sm-6 col-xs-12 reset-padding">
+        <select
+          class="form-select"
+          size="4"
+          aria-label="Default select example"
+          id="select-box"
+        >
+          <option selected>Select Country</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-xs-4"></div>
+      <div class="col-md-4 col-xs-4 loader">
+        <div class="spinner-border text-danger" role="status" id="loader">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-sm-4"></div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="weatherbox-style">
+            <div class="container-fluid padding-top weather-content-height">
+              <div class="text-align-center text-color">
+                <div class="country">
+                  <h2 class="country-name">
+                    <span id="country">Iran</span>
+                    <sup id="country-abrivation">IR</sup>
+                  </h2>
+                  <div class="city-temp" id="temperature">
+                    29
+                    <sup>°C</sup>
+                  </div>
+                  <div class="info">
+                    <p id="status">clear sky</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
